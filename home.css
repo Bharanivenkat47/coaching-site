@@ -49,92 +49,91 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 15px 60px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   z-index: 100;
   overflow-x: hidden;
+  flex-wrap: wrap; /* allows wrapping on smaller screens */
 }
 
+/* LOGO centered vertically */
 .logo {
-  font-size: 20px;
-  font-weight: bold;
-  color: #333;
-  flex-shrink: 0;
+  display: flex;
+  align-items: center;
 }
 
 .logo img {
-  height: 80px;
-  margin-left: 0;
-  margin-top: -10px;
+  height: 70px;
   max-width: 100%;
+  vertical-align: middle;
 }
 
+/* NAV LINKS */
 .nav-links {
   display: flex;
-  gap: 20px;
+  gap: 25px;
   font-size: x-large;
-  flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
-  margin: 0 auto; /* ✅ Centers without overflowing */
+  flex-wrap: wrap;
 }
 
 .nav-links a {
   text-decoration: none;
   color: #333;
   font-weight: 500;
-  transition: color 0.3s;
+  transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
   color: #007BFF;
 }
 
-.menu-toggle {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  gap: 5px;
-}
-
-.menu-toggle span {
-  width: 25px;
-  height: 3px;
-  background: #333;
-}
-
+/* For smaller screens: make it wrap neatly */
 @media (max-width: 992px) {
+  nav {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .logo {
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
   .nav-links {
-    display: none;
-    flex-direction: column;
-    background: #fff;
-    position: absolute;
-    top: 80px;
-    right: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    border-radius: 5px;
-    width: auto;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-
-  .menu-toggle {
-    display: flex;
+    justify-content: center;
   }
 
   .logo img {
-    height: 70px;
+    height: 60px;
   }
 }
 
 html, body {
   overflow-x: hidden;
 }
+
+
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+html, body {
+  overflow-x: hidden;
+}
+
 
 
 .aten, .suc, .Now, .book {
@@ -265,6 +264,7 @@ html, body {
   cursor: pointer;
   transition: all 0.3s ease;
   gap: 30px;
+  font-family: 'Bebas', sans-serif;
 }
 
 .btn:hover {
@@ -283,6 +283,7 @@ html, body {
   cursor: pointer;
   margin-left: 10px;
   transition: all 0.3s ease;
+  font-family: 'Bebas', sans-serif;
 }
 
 
