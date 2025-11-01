@@ -72,7 +72,7 @@ nav {
   vertical-align: middle;
 }
 
-/* NAV LINKS */
+
 .nav-links {
   display: flex;
   gap: 25px;
@@ -147,6 +147,7 @@ html, body {
 }
 
 .aten h1 {
+  margin-top: 30px;
   font-size: 50px;
   font-family: 'Eusthalia Clean', sans-serif;
   /* text-shadow: 2px 2px 5px black; */
@@ -299,8 +300,7 @@ html, body {
   transform: translateY(-2px);
 }
 
-
-    .services {
+  .services {
   background-image: url(./homeimgs/84770f_0cf5b6c1550a4b8c92f92f1064cc68de~mv2.jpg);
   background-size: cover;
   background-position: center;
