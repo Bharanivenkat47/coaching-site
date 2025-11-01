@@ -6,7 +6,7 @@
 @import url('https://fonts.cdnfonts.com/css/asbela-eternity');
 @import url('https://fonts.cdnfonts.com/css/space-wham');
 @import url('https://fonts.cdnfonts.com/css/slow-smoke');
-
+@import url('https://fonts.cdnfonts.com/css/eusthalia-clean');
                 
 
                 
@@ -55,10 +55,9 @@ nav {
   top: 0;
   z-index: 100;
   overflow-x: hidden;
-  flex-wrap: wrap; /* allows wrapping on smaller screens */
+  flex-wrap: wrap; 
 }
 
-/* LOGO centered vertically */
 .logo {
   display: flex;
   align-items: center;
@@ -90,7 +89,7 @@ nav {
   color: #007BFF;
 }
 
-/* For smaller screens: make it wrap neatly */
+
 @media (max-width: 992px) {
   nav {
     justify-content: center;
@@ -146,8 +145,8 @@ html, body {
 
 .aten h1 {
   font-size: 50px;
-  font-family: 'Beatrixe', sans-serif;
-  text-shadow: 2px 2px 5px black;
+  font-family: 'Eusthalia Clean', sans-serif;
+  /* text-shadow: 2px 2px 5px black; */
 
 }
 
@@ -156,13 +155,13 @@ html, body {
   font-weight: bold;
   letter-spacing: 10px;
   font-family: 'Bebas', sans-serif;
-
+  margin-bottom: 20px;
   text-shadow: 2px 2px 5px black;
 }
 
 .Now h1 {
   font-size: 40px;
-  font-family: 'Beatrixe', sans-serif;
+  font-family: 'Eusthalia Clean', sans-serif;
 }
 
 .book {
@@ -176,13 +175,13 @@ html, body {
 }
 
 .book:hover {
-  background-color: #222;
+  background-color: #00000080;
 }
 
 @media (max-width: 1000px) {
   .suc {
     font-size: 100px;
-    letter-spacing: 5px;
+    letter-spacing: 10px;
   }
 }
 
@@ -255,7 +254,7 @@ html, body {
   }
 }
 
-.btn {
+.about-btn {
   background: black;
   color: white;
   border: none;
@@ -265,15 +264,17 @@ html, body {
   transition: all 0.3s ease;
   gap: 30px;
   font-family: 'Bebas', sans-serif;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
 
-.btn:hover {
+.aboout-btn:hover {
   background: #333;
   transform: translateY(-2px);
 }
 
 
-.btn-outline {
+.about-btn-2 {
   background: transparent;
   border: 2px solid black;
   margin-bottom: -20px;
@@ -287,7 +288,7 @@ html, body {
 }
 
 
-.btn-outline:hover {
+.about-btn-2:hover {
   background: black;
   color: white;
   transform: translateY(-2px);
