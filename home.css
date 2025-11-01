@@ -10,6 +10,9 @@
                 
 
                 
+html {
+  scroll-behavior: smooth;
+}
 
 video#bg-video {
       position: fixed;
@@ -205,6 +208,8 @@ html, body {
   justify-content: center;
   padding: 80px 10%;
   gap: 60px;
+  margin-top: 400px;
+  margin-bottom: 200px;
   background: transparent;
   min-height: 80vh;
 }
